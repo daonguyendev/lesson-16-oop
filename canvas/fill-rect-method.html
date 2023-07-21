@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>fillRect Method</title>
+  </head>
+  <body>
+    <canvas
+      id="myCanvas"
+      width="200"
+      height="100"
+      style="border: 1px solid #000"
+    >
+    </canvas>
+
+    <script>
+      var canvas = document.getElementById("myCanvas");
+      var ctx = canvas.getContext("2d");
+      ctx.fillStyle = "#FF0000";
+      //Reference for fillRect: https://www.w3schools.com/tags/canvas_fillrect.asp
+      ctx.fillRect(15, 15, 150, 75);
+    </script>
+  </body>
+</html>

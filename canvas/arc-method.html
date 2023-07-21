@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Arc Method</title>
+  </head>
+  <body>
+    <canvas
+      id="myCanvas"
+      width="400"
+      height="300"
+      style="border: 1px solid #000"
+    >
+    </canvas>
+
+    <script>
+      var canvas = document.getElementById("myCanvas");
+      var context = canvas.getContext("2d");
+      context.beginPath();
+      //Reference for arc(): https://www.w3schools.com/tags/canvas_arc.asp
+      context.arc(100, 75, 50, 0, 1.5 * Math.PI, false);
+      //context.arc(x,y,r,sAngle,eAngle,counterclockwise);
+      context.stroke();
+    </script>
+  </body>
+</html>

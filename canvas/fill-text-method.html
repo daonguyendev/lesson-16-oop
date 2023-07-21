@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>fillText Method</title>
+  </head>
+  <body>
+    <canvas
+      id="myCanvas"
+      width="200"
+      height="100"
+      style="border: 1px solid #000"
+    >
+    </canvas>
+
+    <script>
+      var circle = document.getElementById("myCanvas");
+      var ctx = circle.getContext("2d");
+      ctx.font = "30px Arial";
+      //Reference for fillText: https://www.w3schools.com/tags/canvas_filltext.asp
+      ctx.fillText("Hello Thai", 10, 50);
+    </script>
+  </body>
+</html>
